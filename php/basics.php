@@ -1,3 +1,12 @@
+<!--
+    @description  This is a quick tutorial for the purposes of learning 
+                  basic PHP syntax and constructs
+    @author       Umang Patel
+    @contact      unp@andrew.cmu.edu
+    @license      GNU General Public License (http://www.gnu.org/licenses/)
+    @modified     02/14/12
+-->
+
 <!-- This is an HTML comment -->
 <html>
 <body>
