@@ -49,51 +49,76 @@
 
 /*--------------- Conditionals ---------------*/
 
-$n = 5;//change this value to see results
+  $n = 5;//change this value to see results
 
-if($n < 5)
-{
-  echo "$n is less than five<br>";
-}
-elseif($maybe > 5)
-{
-  echo "$n is greater than five<br>";
-}
-else
-{
-  echo "$n equals five<br>";
-}
+  if($n < 5)
+  {
+    echo "$n is less than five<br>";
+  }
+  elseif($maybe > 5)
+  {
+    echo "$n is greater than five<br>";
+  }
+  else
+  {
+    echo "$n equals five<br>";
+  }
 
 /*--------------- Arrays ---------------*/
 
-// Setting an array
-$arr = array("first" => 1, "second"=> 2, "third"=> 3); //using key/value pairs
-$arr2 = array("one", "two", "three"); //using just values (automatically indexed, starting at 0)
-print_r($arr); //prints value of variable (usually for debugging)
-//echo $arr["second"];
-//unset($arr["first"]);
+  // Setting an Array//
+  $arr = array("first" => 1, "second"=> 2, "third"=> 3); //using key/value pairs
+  $arr2 = array("zero", "one", "two"); //using just values (automatically indexed, starting at 0)
 
+  //Accessing Elements//
+  $arr["second"]; //gets value of element with key "second"
+  $arr2[2]; //gets value of element with index 2
+  
+  //Adding Elements//
+  $arr["fourth"] = 4; //adding key/value pair
+  $arr2[] = "three"; //push element - adding to end of array
+  print_r($arr); //prints value of variable (usually for debugging)
+  
+  //Removing Elements//
+  unset($arr["first"]); //removes element with key "first"
+  unset($arr2[3]); //removes element at index 3
+
+  //Sorting//
+  ksort($arr); //sorts Array by keys
+  sort($arr2); //sorts Array by values
+  print_r($arr);
+  print_r($arr2);
 
 /*--------------- Loops ---------------*/
 
-$n = 10;
-while($n > 0)
-{
-  echo $n . '<br>';
-  $n--;
-}
+  //While Loops//
 
-for($i = 10; $i > 0; $i--)
-{
-  echo $i . '<br>';
-}
+  echo "<h2>Counting down from 10 using While Loop</h2>";
+  $n = 10;
+  while($n > 0)
+  {
+    echo $n . '<br>';
+    $n--;
+  }
+  
+  //For Loops//
+  
+  echo "<h2>Counting down from 10 using For Loop</h2>";
+  for($i = 10; $i > 0; $i--)
+  {
+    echo $i . '<br>';
+  }
 
-foreach($arr as $item)
-{
-  echo $item . '<br>';
-}
-
-
+  //Iterating through an array using Foreach loops//
+  
+  echo "<h2>Contents of array:</h2>";
+  sort($arr);
+  
+  foreach($arr as $item)
+  {
+    echo $item . '<br>';
+  }
+  
 ?>
 </body>
 </html>
