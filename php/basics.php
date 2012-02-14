@@ -55,7 +55,7 @@
   {
     echo "$n is less than five<br>";
   }
-  elseif($maybe > 5)
+  elseif($n > 5)
   {
     echo "$n is greater than five<br>";
   }
