@@ -27,14 +27,14 @@
   // All variables start with $
   
   $var = "Hello"; //This is a String
-  $n = "1"; //This is an Integer
+  $n = 1; //This is an Integer
 
 /*--------------- Strings ---------------*/
 
   //use echo language construct to output a string//
-  $notOutput = 'This string will not be printed';
-  $output = "This string will be printed.<br>";
-  echo $output;
+  $a = 'This is a string'; //This will not be printed
+  $b = "This is another string"; //This will not be printed
+  echo $a; //This WILL be printed
   
   //Single vs. Double Quotes//
 
